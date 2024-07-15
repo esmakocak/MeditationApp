@@ -14,6 +14,7 @@
 		4029C61E2C44785600FC4F2C /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C61D2C44785600FC4F2C /* MeditationView.swift */; };
 		4029C6202C44786400FC4F2C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C61F2C44786400FC4F2C /* PlayerView.swift */; };
 		4029C6222C44787C00FC4F2C /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C6212C44787C00FC4F2C /* PlaybackControlButton.swift */; };
+		4029C6242C451EB400FC4F2C /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C6232C451EB300FC4F2C /* MeditationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4029C61D2C44785600FC4F2C /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		4029C61F2C44786400FC4F2C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		4029C6212C44787C00FC4F2C /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		4029C6232C451EB300FC4F2C /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4029C6112C44783A00FC4F2C /* ContentView.swift */,
 				4029C61F2C44786400FC4F2C /* PlayerView.swift */,
 				4029C6212C44787C00FC4F2C /* PlaybackControlButton.swift */,
+				4029C6232C451EB300FC4F2C /* MeditationViewModel.swift */,
 				4029C61D2C44785600FC4F2C /* MeditationView.swift */,
 				4029C6132C44783C00FC4F2C /* Assets.xcassets */,
 				4029C6152C44783C00FC4F2C /* Preview Content */,
@@ -150,6 +153,7 @@
 				4029C61E2C44785600FC4F2C /* MeditationView.swift in Sources */,
 				4029C6222C44787C00FC4F2C /* PlaybackControlButton.swift in Sources */,
 				4029C6102C44783A00FC4F2C /* MeditationApp.swift in Sources */,
+				4029C6242C451EB400FC4F2C /* MeditationViewModel.swift in Sources */,
 				4029C6202C44786400FC4F2C /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

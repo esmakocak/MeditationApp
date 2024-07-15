@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PlayerView: View {
     @State private var value: Double = 0.0
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack{
             Image("sea")
@@ -28,7 +30,7 @@ struct PlayerView: View {
                 // MARK: Dismiss Button
                 HStack {
                     Button {
-                        
+                        dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 36))
