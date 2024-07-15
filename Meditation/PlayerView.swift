@@ -39,6 +39,7 @@ struct PlayerView: View {
                 // MARK: Dismiss Button
                 HStack {
                     Button {
+                        audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -88,22 +89,24 @@ struct PlayerView: View {
                     
                     HStack {
                         // MARK: Repeat Button
-                        PlaybackControlButton(systemName: "repeat") {
-                            
+                        let color: Color = audioManager.isLooping ? .teal : .white
+                        PlaybackControlButton(systemName: "repeat", color: color) {
+                            audioManager.toggleLoop()
                         }
                         
                         Spacer()
                         
                         // MARK: Backward Button
                         PlaybackControlButton(systemName: "gobackward.10") {
-                            
+                            player.currentTime -= 10
                         }
                         
                         Spacer()
 
 
                         // MARK: Play/Pause Button
-                        PlaybackControlButton(systemName: "play.circle.fill", fontSize: 44) {
+                        PlaybackControlButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 44) {
+                            audioManager.playPause()
                             
                         }
 
@@ -111,14 +114,15 @@ struct PlayerView: View {
 
                         // MARK: Forward Button
                         PlaybackControlButton(systemName: "goforward.10") {
-                            
+                            player.currentTime += 10
                         }
 
                         Spacer()
 
                         // MARK: Stop Button
                         PlaybackControlButton(systemName: "stop.fill") {
-                            
+                                audioManager.stop()
+                                dismiss()
                         }
                     }
                 }
