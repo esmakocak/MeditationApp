@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct PlayerView: View {
+    var meditationVM: MeditationViewModel
     @State private var value: Double = 0.0
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack{
-            Image("sea")
+            Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width)
@@ -40,7 +41,7 @@ struct PlayerView: View {
                 }
                 
                 // MARK: Title
-                Text("1 Minute Relaxing Meditation")
+                Text(meditationVM.meditation.title)
                     .font(.title)
                     .foregroundColor(.white)
                 
@@ -106,9 +107,15 @@ struct PlayerView: View {
             }
             .padding(20)
         }
+        .onAppear{
+            AudioManager.shared.startPlayer(track: meditationVM.meditation.track)
+        }
     }
 }
 
-#Preview {
-    PlayerView()
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerView(meditationVM: MeditationViewModel(meditation: Meditation.data))
+    }
 }
