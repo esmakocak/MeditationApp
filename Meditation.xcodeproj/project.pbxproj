@@ -33,6 +33,7 @@
 		4029C6252C45295600FC4F2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4029C6272C45378600FC4F2C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		4029C62B2C45549A00FC4F2C /* meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation.mp3; sourceTree = "<group>"; };
+		4029C62E2C455B0C00FC4F2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 		4029C60E2C44783A00FC4F2C /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				4029C62E2C455B0C00FC4F2C /* Info.plist */,
 				4029C60F2C44783A00FC4F2C /* MeditationApp.swift */,
 				4029C6112C44783A00FC4F2C /* ContentView.swift */,
 				4029C61F2C44786400FC4F2C /* PlayerView.swift */,
@@ -303,6 +305,7 @@
 				DEVELOPMENT_TEAM = 79BT787T5X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +335,7 @@
 				DEVELOPMENT_TEAM = 79BT787T5X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
