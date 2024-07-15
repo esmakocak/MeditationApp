@@ -14,6 +14,11 @@ struct PlayerView: View {
     @State private var value: Double = 0.0
     @Environment(\.dismiss) var dismiss
     
+    let timer = Timer
+        .publish(every: 0.5, on: .main, in: .common)
+        .autoconnect()
+    
+    
     var body: some View {
         ZStack{
             Image(meditationVM.meditation.image)
@@ -112,6 +117,10 @@ struct PlayerView: View {
         .onAppear{
  //           AudioManager.shared.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
             audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
+        }
+        .onReceive(timer) { _ in
+            guard let player = audioManager.player else {return}
+            value = player.currentTime
         }
     }
 }
