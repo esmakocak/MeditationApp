@@ -1,6 +1,7 @@
 **Meditation App Features:**
 
-- A meditation app with relaxing music included.
+- A meditation app with relaxing musics included.
+- Select the desired track from menu.
 - **Audio Controls:** Player interface featuring play/pause, rewind/forward, stop, and repeat functionalities.
 - Track progress with a visual **slider**.
 - Built with **AVKit**, **SwiftUI**, **Combine** frameworks and **MVVM** design pattern.
