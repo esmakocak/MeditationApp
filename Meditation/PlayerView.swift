@@ -144,7 +144,7 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(meditationVM: MeditationViewModel(meditation: Meditation.data), isPreview: true)
+        PlayerView(meditationVM: MeditationViewModel(meditation: Meditation.data[0]), isPreview: true)
             .environmentObject(AudioManager())
     }
 }

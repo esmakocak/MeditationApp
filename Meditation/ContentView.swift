@@ -9,7 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
+        NavigationView {
+            List(Meditation.data) { meditation in
+                NavigationLink(destination: MeditationView(meditationVM: MeditationViewModel(meditation: meditation))) {
+                    HStack {
+                        Image(meditation.image)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .cornerRadius(5.0)
+                            
+                        VStack(alignment: .leading) {
+                            Text(meditation.title)
+                                .font(.headline)
+                        }
+                    }
+                    
+                }
+            }
+            .navigationTitle("Tracks")
+        }
     }
 }
 
@@ -17,3 +35,4 @@ struct ContentView: View {
     ContentView()
         .environmentObject(AudioManager())
 }
+

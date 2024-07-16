@@ -5,6 +5,8 @@
 //  Created by Esma Koçak on 14.07.2024.
 //
 
+
+
 import SwiftUI
 
 struct MeditationView: View {
@@ -76,7 +78,7 @@ struct MeditationView: View {
 
 struct MeditationView_Previews: PreviewProvider {
     static var previews: some View {
-        MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
+        MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data[0]))
             .environmentObject(AudioManager())
     }
 }

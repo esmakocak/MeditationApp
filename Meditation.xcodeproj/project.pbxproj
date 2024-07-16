@@ -18,6 +18,8 @@
 		4029C6262C45295600FC4F2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C6252C45295600FC4F2C /* Extensions.swift */; };
 		4029C6282C45378600FC4F2C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C6272C45378600FC4F2C /* AudioManager.swift */; };
 		4029C62C2C45549A00FC4F2C /* meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4029C62B2C45549A00FC4F2C /* meditation.mp3 */; };
+		40872DE22C4677E400769F67 /* ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40872DE12C4677E400769F67 /* ocean.mp3 */; };
+		40872DE42C4677E900769F67 /* chill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40872DE32C4677E800769F67 /* chill.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4029C6272C45378600FC4F2C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		4029C62B2C45549A00FC4F2C /* meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation.mp3; sourceTree = "<group>"; };
 		4029C62E2C455B0C00FC4F2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40872DE12C4677E400769F67 /* ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean.mp3; sourceTree = "<group>"; };
+		40872DE32C4677E800769F67 /* chill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				4029C6252C45295600FC4F2C /* Extensions.swift */,
 				4029C6132C44783C00FC4F2C /* Assets.xcassets */,
 				4029C62B2C45549A00FC4F2C /* meditation.mp3 */,
+				40872DE12C4677E400769F67 /* ocean.mp3 */,
+				40872DE32C4677E800769F67 /* chill.mp3 */,
 				4029C6152C44783C00FC4F2C /* Preview Content */,
 			);
 			path = Meditation;
@@ -149,8 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4029C6172C44783C00FC4F2C /* Preview Assets.xcassets in Resources */,
+				40872DE22C4677E400769F67 /* ocean.mp3 in Resources */,
 				4029C62C2C45549A00FC4F2C /* meditation.mp3 in Resources */,
 				4029C6142C44783C00FC4F2C /* Assets.xcassets in Resources */,
+				40872DE42C4677E900769F67 /* chill.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
